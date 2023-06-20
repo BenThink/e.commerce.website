@@ -1,17 +1,17 @@
 [
     {
-        "image": "../images/mixed/pottery.jpg",
+        "image": "../e.commerce.website/images/mixed/pottery.jpg",
         "title": "Shiny Pottery",
-        "link": "../shop.html"
+        "link": "../e.commerce.website/shop.html"
     },
     {
-        "image": "../images/mixed/souvenir.jpg",
+        "image": "../e.commerce.website/images/mixed/souvenir.jpg",
         "title": "Mixed Souvenirs",
-        "link": "../shop.html"
+        "link": "../e.commerce.website/shop.html"
     },
     {
-        "image": "../images/mixed/candles.jpg",
+        "image": "../e.commerce.website/images/mixed/candles.jpg",
         "title": "Cozy Candles",
-        "link": "../shop.html"
+        "link": "../e.commerce.website/shop.html"
     }
 ]
