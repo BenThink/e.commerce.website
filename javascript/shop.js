@@ -7,7 +7,7 @@ if (document.readyState === 'loading') {
 
 function ready() {
     // Fetch the item data from the JSON file
-    fetch('../items/shop.json')
+    fetch('../e.commerce.website/items/shop.json')
         .then(response => response.json())
         .then(data => {
             const items = data;
