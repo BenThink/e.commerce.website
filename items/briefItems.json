@@ -1,0 +1,17 @@
+[
+    {
+        "image": "../images/mixed/pottery.jpg",
+        "title": "Shiny Pottery",
+        "link": "../shop.html"
+    },
+    {
+        "image": "../images/mixed/souvenir.jpg",
+        "title": "Mixed Souvenirs",
+        "link": "../shop.html"
+    },
+    {
+        "image": "../images/mixed/candles.jpg",
+        "title": "Cozy Candles",
+        "link": "../shop.html"
+    }
+]

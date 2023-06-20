@@ -1,0 +1,22 @@
+#blog-container .post .post-img {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#blog-container .post img {
+    transition: 0.5s ease;
+}
+
+#blog-container .post:hover img {
+    transform: scale(1.2) rotate(-9deg);
+    opacity: 0.8;
+}
+
+#blog-container .post h3 {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#blog-container .post:hover h3 {
+    color: #f77e55;
+}
