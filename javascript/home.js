@@ -16,7 +16,7 @@ function generateBriefItems() {
     const containerNewItems = document.getElementById("newItemsContainer");
 
     // Fetching from .json file
-    fetch("../items/briefItems.json")
+    fetch("../e.commerce.website/items/briefItems.json")
         .then(response => response.json())
         .then(parsedItems => {
             // Looping through the items array and creating the necessary elements
@@ -72,7 +72,7 @@ function generateBriefItems() {
 function generateFeaturedItems() {
     const containerFeaturedItems = document.querySelector("#featured .row");
 
-    fetch("../items/featuredItems.json")
+    fetch("../e.commerce.website/items/featuredItems.json")
         .then(response => response.json())
         .then(parsedFeaturedItems => {
             parsedFeaturedItems.forEach((item) => {
