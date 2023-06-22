@@ -12,7 +12,7 @@ function ready() {
     fetch('../e.commerce.website/items/shop.json')
         .then(response => response.json())
         .then(data => {
-            const items = addPathPrefixToImgSrc(data, '/e.commerce.website');
+            const items = addPathPrefixToImgSrc(data, 'e.commerce.website/');
 
             // Generate shop items dynamically
             const shopElement = document.getElementsByClassName('shop')[0];
