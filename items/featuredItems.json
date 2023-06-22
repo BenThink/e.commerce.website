@@ -1,26 +1,26 @@
 [
     {
-        "image": "../e.commerce.website/images/featured/mug.jpg",
+        "image": "../images/featured/mug.jpg",
         "title": "Different Mugs",
-        "link": "../e.commerce.website/shop.html",
+        "link": "../shop.html",
         "price": "$4.23"
     },
     {
-        "image": "../e.commerce.website/images/featured/souvenir.jpg",
+        "image": "../images/featured/souvenir.jpg",
         "title": "Mount Rushmore Presidents",
-        "link": "../e.commerce.website/shop.html",
+        "link": "../shop.html",
         "price": "$3.52"
     },
     {
-        "image": "../e.commerce.website/images/featured/candlee.jpg",
+        "image": "../images/featured/candlee.jpg",
         "title": "Scented Candles",
-        "link": "../e.commerce.website/shop.html",
+        "link": "../shop.html",
         "price": "$5.73"
     },
     {
-        "image": "../e.commerce.website/images/featured/pottery.jpg",
+        "image": "../images/featured/pottery.jpg",
         "title": "Ornamental Vase",
-        "link": "../e.commerce.website/shop.html",
+        "link": "../shop.html",
         "price": "$6.28"
     }
 ]
