@@ -1,6 +1,6 @@
 export function addPathPrefixToImgSrc(jsonData, prefix) {
     return jsonData.map(item => {
-        item.imgSrc = prefix + item.imgSrc;
+        item.imgSrc = item.imgSrc.replace(/^\.\.\//, prefix);
         return item;
     });
 }
