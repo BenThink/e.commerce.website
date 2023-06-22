@@ -1,3 +1,5 @@
+import {addPathPrefixToImgSrc} from '../jsonUtils.js'
+
 // Make sure the Document is done loading before running the function ready()
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
