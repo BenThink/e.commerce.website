@@ -62,7 +62,7 @@ function addItemToCart(title, price, imgSrc) {
     const cartItem = {
         title: title,
         price: price,
-        image: imgSrc
+        imgSrc: imgSrc
     };
 
     // Retrieve existing cart items from localStorage or initialize an empty array
