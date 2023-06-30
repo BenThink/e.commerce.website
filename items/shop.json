@@ -2,81 +2,81 @@
     {
         "title": "Different Mugs",
         "price": "$4.23",
-        "imgSrc": "../images/shop/mug.jpg"
+        "image": "../images/shop/mug.jpg"
     },
     {
         "title": "Rushmore Presidents",
         "price": "$3.52",
-        "imgSrc": "../images/shop/souvenir.jpg"
+        "image": "../images/shop/souvenir.jpg"
     },
     {
         "title": "Scented Candles",
         "price": "$5.73",
-        "imgSrc": "../images/shop/candlee.jpg"
+        "image": "../images/shop/candlee.jpg"
     },
     {
         "title": "Ornamental Vase",
         "price": "$6.28",
-        "imgSrc": "../images/shop/pottery.jpg"
+        "image": "../images/shop/pottery.jpg"
     },
     {
         "title": "Scented Blue Candle",
         "price": "$4.23",
-        "imgSrc": "../images/shop/1.jpg"
+        "image": "../images/shop/1.jpg"
     },
     {
         "title": "Scented Pink Candle",
         "price": "$3.52",
-        "imgSrc": "../images/shop/2.jpg"
+        "image": "../images/shop/2.jpg"
     },
     {
         "title": "Scented Brown Candle",
         "price": "$5.73",
-        "imgSrc": "../images/shop/3.jpg"
+        "image": "../images/shop/3.jpg"
     },
     {
         "title": "Scented Black Candle",
         "price": "$6.28",
-        "imgSrc": "../images/shop/4.jpg"
+        "image": "../images/shop/4.jpg"
     },
     {
         "title": "Different Mugs",
         "price": "$4.23",
-        "imgSrc": "../images/shop/mug.jpg"
+        "image": "../images/shop/mug.jpg"
     },
     {
         "title": "Rushmore Presidents",
         "price": "$3.52",
-        "imgSrc": "../images/shop/souvenir.jpg"
+        "image": "../images/shop/souvenir.jpg"
     },
     {
         "title": "Scented Candles",
         "price": "$5.73",
-        "imgSrc": "../images/shop/candlee.jpg"
+        "image": "../images/shop/candlee.jpg"
     },
     {
         "title": "Ornamental Vase",
         "price": "$6.28",
-        "imgSrc": "../images/shop/pottery.jpg"
+        "image": "../images/shop/pottery.jpg"
     },
     {
         "title": "Scented Blue Candle",
         "price": "$4.23",
-        "imgSrc": "../images/shop/1.jpg"
+        "image": "../images/shop/1.jpg"
     },
     {
         "title": "Scented Pink Candle",
         "price": "$3.52",
-        "imgSrc": "../images/shop/2.jpg"
+        "image": "../images/shop/2.jpg"
     },
     {
         "title": "Scented Brown Candle",
         "price": "$5.73",
-        "imgSrc": "../images/shop/3.jpg"
+        "image": "../images/shop/3.jpg"
     },
     {
         "title": "Scented Black Candle",
         "price": "$6.28",
-        "imgSrc": "../images/shop/4.jpg"
+        "image": "../images/shop/4.jpg"
     }
 ]
