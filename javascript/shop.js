@@ -20,7 +20,7 @@ function ready() {
             for (let item of items) {
                 item = `
                 <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-shop img-fluid mb-3" src="${item.imgSrc}" alt="error">
+                    <img class="img-shop img-fluid mb-3" src="${item.image}" alt="error">
                     <div class="star">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -62,7 +62,7 @@ function addItemToCart(title, price, imgSrc) {
     const cartItem = {
         title: title,
         price: price,
-        imgSrc: imgSrc
+        image: imgSrc
     };
 
     // Retrieve existing cart items from localStorage or initialize an empty array
