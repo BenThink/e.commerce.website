@@ -1,28 +1,28 @@
 [
     {
         "name": "Ornamental Tree",
-        "image": "images/items/souvenirs/1.jpg",
+        "image": "../images/items/souvenirs/1.jpg",
         "link": "../shop.html",
         "button": "Buy Now",
         "price": 1.54
     },
     {
         "name": "Matroska Presidents",
-        "image": "images/items/souvenirs/2.jpg",
+        "image": "../images/items/souvenirs/2.jpg",
         "link": "../shop.html",
         "button": "Buy Now",
         "price": 2.34
     },
     {
         "name": "Swinging Angel",
-        "image": "images/items/souvenirs/3.jpg",
+        "image": "../images/items/souvenirs/3.jpg",
         "link": "../shop.html",
         "button": "Buy Now",
         "price": 1.13
     },
     {
         "name": "Miniature Car",
-        "image": "images/items/souvenirs/4.jpg",
+        "image": "../images/items/souvenirs/4.jpg",
         "link": "../shop.html",
         "button": "Buy Now",
         "price": 1.98
