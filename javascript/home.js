@@ -24,7 +24,7 @@ function generateBriefItems() {
     const containerNewItems = document.getElementById("newItemsContainer");
 
     // Fetching from .json file
-    fetch("../e.commerce.wensite/items/briefItems.json")
+    fetch("../e.commerce.website/items/briefItems.json")
         .then(response => response.json())
         .then(parsedItems => {
             const items = addPathPrefix(parsedItems, 'e.commerce.website/');
@@ -81,7 +81,7 @@ function generateBriefItems() {
 function generateFeaturedItems() {
     const containerFeaturedItems = document.querySelector("#featured .row");
 
-    fetch("../e.commerce.wensite/items/featuredItems.json")
+    fetch("../e.commerce.website/items/featuredItems.json")
         .then(response => response.json())
         .then(parsedFeaturedItems => {
             const items = addPathPrefix(parsedFeaturedItems, 'e.commerce.website/');
@@ -140,7 +140,7 @@ function generatePotteryItems() {
     // Select the div where all elements will be appended
     const containerPotteryItems = document.querySelector('#pottery .pottery');
 
-    fetch("../e.commerce.wensite/items/potteryItems.json")
+    fetch("../e.commerce.website/items/potteryItems.json")
         .then(response => response.json())
         .then(data => {
             const items = addPathPrefix(data, 'e.commerce.website/');
@@ -200,7 +200,7 @@ function generateSouvenirItems() {
     // Select the div where all elements will be appended
     const containerSouvenirItems = document.querySelector('#souvenirs .souvenir');
 
-    fetch("../e.commerce.wensite/items/souvenirItems.json")
+    fetch("../e.commerce.website/items/souvenirItems.json")
         .then(response => response.json())
         .then(data => {
             const items = addPathPrefix(data, 'e.commerce.website/');
@@ -260,7 +260,7 @@ function generateCandleItems() {
     // Select the div where all elements will be appended
     const containerCandleItems = document.querySelector('#candles .candle');
 
-    fetch("../e.commerce.wensite/items/candleItems.json")
+    fetch("../e.commerce.website/items/candleItems.json")
         .then(response => response.json())
         .then(data => {
             const items = addPathPrefix(data, 'e.commerce.website/');
