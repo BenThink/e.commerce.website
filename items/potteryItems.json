@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Greenish Pottery",
+        "image": "images/items/pottery/1.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 7.19
+    },
+    {
+        "name": "Golden Plates",
+        "image": "images/items/pottery/2.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 6.32
+    },
+    {
+        "name": "Mixed Pottery Set",
+        "image": "images/items/pottery/3.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 11.73
+    },
+    {
+        "name": "Coffee Mug",
+        "image": "images/items/pottery/4.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 3.38
+    }
+]

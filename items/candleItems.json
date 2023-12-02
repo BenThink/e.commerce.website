@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Night Candles",
+        "image": "images/items/candles/1.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 8.38
+    },
+    {
+        "name": "Ornamental Candles",
+        "image": "images/items/candles/2.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 6.82
+    },
+    {
+        "name": "Scented Candles",
+        "image": "images/items/candles/3.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 4.11
+    },
+    {
+        "name": "Simple Candles",
+        "image": "images/items/candles/4.jpg",
+        "link": "../shop.html",
+        "button": "Buy Now",
+        "price": 2.74
+    }
+]
