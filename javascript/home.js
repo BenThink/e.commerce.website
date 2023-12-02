@@ -5,10 +5,16 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         generateBriefItems();
         generateFeaturedItems();
+        generatePotteryItems();
+        generateSouvenirItems();
+        generateCandleItems();
     });
 } else {
     generateBriefItems();
     generateFeaturedItems();
+    generatePotteryItems();
+    generateSouvenirItems();
+    generateCandleItems();
 }
 
 
@@ -18,12 +24,12 @@ function generateBriefItems() {
     const containerNewItems = document.getElementById("newItemsContainer");
 
     // Fetching from .json file
-    fetch("../e.commerce.website/items/briefItems.json")
+    fetch("../e.commerce.wensite/items/briefItems.json")
         .then(response => response.json())
         .then(parsedItems => {
             const items = addPathPrefix(parsedItems, 'e.commerce.website/');
             // Looping through the items array and creating the necessary elements
-            items.forEach((item) => {
+            parsedItems.forEach((item) => {
                 // Create a div with bootstrap classes
                 // where the img + div.details will be appended
                 const itemDivBootstrap = document.createElement("div");
@@ -75,7 +81,7 @@ function generateBriefItems() {
 function generateFeaturedItems() {
     const containerFeaturedItems = document.querySelector("#featured .row");
 
-    fetch("../e.commerce.website/items/featuredItems.json")
+    fetch("../e.commerce.wensite/items/featuredItems.json")
         .then(response => response.json())
         .then(parsedFeaturedItems => {
             const items = addPathPrefix(parsedFeaturedItems, 'e.commerce.website/');
@@ -128,3 +134,182 @@ function generateFeaturedItems() {
         );
 }
 
+
+// Pottery Items
+function generatePotteryItems() {
+    // Select the div where all elements will be appended
+    const containerPotteryItems = document.querySelector('#pottery .pottery');
+
+    fetch("../e.commerce.wensite/items/potteryItems.json")
+        .then(response => response.json())
+        .then(data => {
+            const items = addPathPrefix(data, 'e.commerce.website/');
+            items.forEach(item => {
+                //appeding all items inside this div
+                const divForItems = document.createElement('div');
+                divForItems.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
+
+                const img = document.createElement('img');
+                img.classList.add('img-fluid', 'mb-3');
+                img.src = item.image;
+                img.alt = 'error';
+
+                const divStar = document.createElement('div');
+                divStar.classList.add('star');
+
+                for (let i = 0; i < 5; i++) {
+                    const iStar = document.createElement('i');
+                    iStar.classList.add('fa', 'fa-star');
+
+                    divStar.append(iStar);
+                };
+
+                const itemTitle = document.createElement('h5');
+                itemTitle.classList.add('p-name');
+                itemTitle.innerText = item.name;
+
+                const itemPrice = document.createElement('h4');
+                itemPrice.classList.add('p-price');
+                itemPrice.innerText = item.price;
+
+                const itemButton = document.createElement('button');
+                itemButton.classList.add('buy-btn');
+                itemButton.innerText = item.button;
+                itemButton.addEventListener('click', () => {
+                    window.location.href = item.link;
+                });
+
+                divForItems.append(img);
+                divForItems.append(divStar);
+                divForItems.append(itemTitle);
+                divForItems.append(itemPrice);
+                divForItems.append(itemButton);
+
+                containerPotteryItems.append(divForItems);
+            });
+        })
+        .catch(e => {
+            console.log("Error while fetching pottery items: ", e);
+        });
+
+};
+
+
+// Souvenir Items
+function generateSouvenirItems() {
+    // Select the div where all elements will be appended
+    const containerSouvenirItems = document.querySelector('#souvenirs .souvenir');
+
+    fetch("../e.commerce.wensite/items/souvenirItems.json")
+        .then(response => response.json())
+        .then(data => {
+            const items = addPathPrefix(data, 'e.commerce.website/');
+            items.forEach(item => {
+                //appeding all items inside this div
+                const divForItems = document.createElement('div');
+                divForItems.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
+
+                const img = document.createElement('img');
+                img.classList.add('img-fluid', 'mb-3');
+                img.src = item.image;
+                img.alt = 'error';
+
+                const divStar = document.createElement('div');
+                divStar.classList.add('star');
+
+                for (let i = 0; i < 5; i++) {
+                    const iStar = document.createElement('i');
+                    iStar.classList.add('fa', 'fa-star');
+
+                    divStar.append(iStar);
+                };
+
+                const itemTitle = document.createElement('h5');
+                itemTitle.classList.add('p-name');
+                itemTitle.innerText = item.name;
+
+                const itemPrice = document.createElement('h4');
+                itemPrice.classList.add('p-price');
+                itemPrice.innerText = item.price;
+
+                const itemButton = document.createElement('button');
+                itemButton.classList.add('buy-btn');
+                itemButton.innerText = item.button;
+                itemButton.addEventListener('click', () => {
+                    window.location.href = item.link;
+                });
+
+                divForItems.append(img);
+                divForItems.append(divStar);
+                divForItems.append(itemTitle);
+                divForItems.append(itemPrice);
+                divForItems.append(itemButton);
+
+                containerSouvenirItems.append(divForItems);
+            });
+        })
+        .catch(e => {
+            console.log("Error while fetching souvneir items: ", e);
+        });
+
+};
+
+
+// Souvenir Items
+function generateCandleItems() {
+    // Select the div where all elements will be appended
+    const containerCandleItems = document.querySelector('#candles .candle');
+
+    fetch("../e.commerce.wensite/items/candleItems.json")
+        .then(response => response.json())
+        .then(data => {
+            const items = addPathPrefix(data, 'e.commerce.website/');
+            items.forEach(item => {
+                //appeding all items inside this div
+                const divForItems = document.createElement('div');
+                divForItems.classList.add('product', 'text-center', 'col-lg-3', 'col-md-4', 'col-12');
+
+                const img = document.createElement('img');
+                img.classList.add('img-fluid', 'mb-3');
+                img.src = item.image;
+                img.alt = 'error';
+
+                const divStar = document.createElement('div');
+                divStar.classList.add('star');
+
+                for (let i = 0; i < 5; i++) {
+                    const iStar = document.createElement('i');
+                    iStar.classList.add('fa', 'fa-star');
+
+                    divStar.append(iStar);
+                };
+
+                const itemTitle = document.createElement('h5');
+                itemTitle.classList.add('p-name');
+                itemTitle.innerText = item.name;
+
+                const itemPrice = document.createElement('h4');
+                itemPrice.classList.add('p-price');
+                itemPrice.innerText = item.price;
+
+                const itemButton = document.createElement('button');
+                itemButton.classList.add('buy-btn');
+                itemButton.innerText = item.button;
+                itemButton.addEventListener('click', () => {
+                    window.location.href = item.link;
+                });
+
+                divForItems.append(img);
+                divForItems.append(divStar);
+                divForItems.append(itemTitle);
+                divForItems.append(itemPrice);
+                divForItems.append(itemButton);
+
+                containerCandleItems.append(divForItems);
+            });
+        })
+        .catch(e => {
+            console.log("Error while fetching candle items: ", e);
+        });
+
+};
