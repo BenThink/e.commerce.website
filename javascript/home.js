@@ -29,7 +29,7 @@ function generateBriefItems() {
         .then(parsedItems => {
             const items = addPathPrefix(parsedItems, 'e.commerce.website/');
             // Looping through the items array and creating the necessary elements
-            parsedItems.forEach((item) => {
+            items.forEach((item) => {
                 // Create a div with bootstrap classes
                 // where the img + div.details will be appended
                 const itemDivBootstrap = document.createElement("div");
