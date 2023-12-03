@@ -26,8 +26,8 @@ function generateBriefItems() {
     // Fetching from .json file
     fetch("../e.commerce.website/items/briefItems.json")
         .then(response => response.json())
-        .then(parsedItems => {
-            const items = addPathPrefix(parsedItems, 'e.commerce.website/');
+        .then(data => {
+            const items = addPathPrefix(data, 'e.commerce.website/');
             // Looping through the items array and creating the necessary elements
             items.forEach((item) => {
                 // Create a div with bootstrap classes
@@ -83,8 +83,8 @@ function generateFeaturedItems() {
 
     fetch("../e.commerce.website/items/featuredItems.json")
         .then(response => response.json())
-        .then(parsedFeaturedItems => {
-            const items = addPathPrefix(parsedFeaturedItems, 'e.commerce.website/');
+        .then(data => {
+            const items = addPathPrefix(data, 'e.commerce.website/');
             items.forEach((item) => {
                 const itemDivBootstrap = document.createElement("div");
                 itemDivBootstrap.classList.add("product", "text-center", "col-lg-3", "col-md-4", "col-12");
