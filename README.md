@@ -8,7 +8,7 @@ In creating this project i used *HTML5 / CSS3 / JavaScript ES6 / Json / Bootstra
 
 *New updates to come:*
 
-- creating a data base for .json data
+- creating a data base for .json 
 
 - creating the page 'Contact Us'
 
